@@ -1,0 +1,18 @@
+body {
+  padding: 0.5rem;
+  background-color: darkslategray;
+}
+
+body *:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.toggle {
+  height: 1rem;
+  width: 3rem;
+  background-color: red;
+}
+
+.toggle.on {
+  background-color: blue;
+}

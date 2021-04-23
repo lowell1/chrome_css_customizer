@@ -10,7 +10,8 @@
       "48": "logo.png",
       "96": "logo.png",
       "128": "logo.png"
-    }
+    },
+    "default_popup": "index.html"
   },
   "icons": {
     "16": "logo.png",
@@ -18,5 +19,9 @@
     "48": "logo.png",
     "96": "logo.png",
     "128": "logo.png"
-  }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"]
 }

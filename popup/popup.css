@@ -9,8 +9,9 @@ body *:not(:last-of-type) {
 
 .toggle {
   height: 1rem;
-  width: 3rem;
   background-color: red;
+  white-space: nowrap;
+  padding: 1rem;
 }
 
 .toggle.on {

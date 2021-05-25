@@ -1,3 +1,4 @@
+/*
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.local.clear();
   chrome.storage.local.set({ inputs: { darkMode: false } });
@@ -6,3 +7,4 @@ chrome.runtime.onInstalled.addListener(() => {
 // create initial state for inputs
 
 // chrome.storage.local.set({ inputs: { darkMode: false, input2: true } });
+*/

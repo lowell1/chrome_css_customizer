@@ -26,7 +26,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["css_manager.js"]
+      "js": ["web_page.js"]
     }
   ],
   "permissions": ["storage"]

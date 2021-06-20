@@ -1,5 +1,4 @@
 // script that runs in the context of the web page
-
 chrome.runtime.onMessage.addListener((request) => {
   const { active, name, content } = request;
   const styleSheetElement = document.querySelector(
@@ -23,11 +22,4 @@ chrome.runtime.onMessage.addListener((request) => {
   } else if (styleSheetElement !== null) {
     document.head.removeChild(styleSheetElement);
   }
-
-  // console.log(request);
-  // remove stylesheet from webpage
-  // if(request.removeCSS)
-  //     console
-  // add stylesheet to webpage
 });
-// console.log("hello world");

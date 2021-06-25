@@ -2,10 +2,16 @@ const handleDeleteClick = (event, idx) => {
   event.stopPropagation();
 
   chrome.storage.local.get("styles", ({ styles }) => {
-    styles.splice(idx, 1);
+    chrome.tabs.query({}, (tabs) => {
+      tabs.forEach(({ id }) => {
+        chrome.tabs.sendMessage(id, { ...styles[idx], active: false });
+      });
 
-    chrome.storage.local.set({
-      styles,
+      styles.splice(idx, 1);
+
+      chrome.storage.local.set({
+        styles,
+      });
     });
   });
 

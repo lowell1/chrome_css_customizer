@@ -25,6 +25,10 @@ body *:not(:last-of-type) {
   color: white;
 } */
 
+a:hover {
+  color: blue !important;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

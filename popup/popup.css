@@ -1,4 +1,4 @@
-body {
+/* body {
   padding: 0.5rem;
   background-color: darkslategray;
 }
@@ -16,4 +16,15 @@ body *:not(:last-of-type) {
 
 .toggle.on {
   background-color: blue;
+}
+
+.container {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  color: white;
+} */
+
+.cursor-pointer {
+  cursor: pointer;
 }

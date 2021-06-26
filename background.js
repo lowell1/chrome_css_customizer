@@ -5,12 +5,12 @@ chrome.runtime.onInstalled.addListener(() => {
     styles: [
       {
         name: "Dark Mode",
-        active: true,
+        active: false,
         content: "*{background-color:black;color:white",
       },
       {
         name: "Big Text",
-        active: true,
+        active: false,
         content: "*{font-size: 100px;}",
       },
     ],

@@ -6,7 +6,10 @@ chrome.runtime.onInstalled.addListener(() => {
       {
         name: "Dark Mode",
         active: false,
-        content: "*{background-color:black;color:white",
+        content: `* {
+                      background-color: black !important;
+                      color: white !important;
+                    }`,
       },
       {
         name: "Big Text",
